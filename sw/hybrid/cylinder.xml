@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimMechanicsImportXML version="1.0" xmlns="urn:mathworks:simmechanics:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="01/29/16||12:03:28" using="SimMechanics Link Version 4.4" from="SolidWorks 21.0.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="cylinder" uid="cylinder" version="117">
+<AssemblyFile name="cylinder.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="cylinder-1" uid="cylinder-1" grounded="true" entityUid="cylinder*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.033065086082064196 0.090781032458778624 0.061932250272418984</Translation>
+</Transform>
+</Instance>
+<Instance name="piston-1" uid="piston-1" entityUid="piston*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.033065086082064196 0.090781032458778624 0.081932250272418988</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>cylinder-1</Uid>
+</InstancePath>
+<Position>0 0 0.020000000000000004</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>piston-1</Uid>
+</InstancePath>
+<Position>0 0 0.0050000000000000044</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>cylinder-1</Uid>
+</InstancePath>
+<Position>0.0025000000000000022 0.014999999999999999 0.020000000000000004</Position>
+<Axis>-1 0 1.1977852572220814e-016</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>piston-1</Uid>
+</InstancePath>
+<Position>0.0025000000000000022 -500.00000000000006 0.0050000000000000044</Position>
+<Axis>1 0 -3.4694469519536147e-016</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Distance name="LimitDistance2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>cylinder-1</Uid>
+</InstancePath>
+<Position>0 0 0.020000000000000004</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>piston-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Distance>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="cylinder" uid="cylinder*:*Default" version="191">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="cylinder.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.050887662467282241</Mass>
+<CenterOfMass>1.6651033584326787e-009 -0.00035463941346126372 0.05904041257888723</CenterOfMass>
+<Inertia>0.00014653172528417588 0.00014688698590110681 7.9314287288613275e-006 2.4290773029098411e-007 3.3891519851386319e-012 4.8720078926492158e-012</Inertia>
+</MassProperties>
+<GeometryFile name="cylinder_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="piston" uid="piston*:*Default" version="146">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="piston.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.073790781941536154</Mass>
+<CenterOfMass>3.0721434947149375e-009 1.1994112634806359e-005 0.11458761746636366</CenterOfMass>
+<Inertia>0.00034217377142471223 0.00034218943083153588 3.7814938108998627e-006 9.9277294609281232e-008 -2.0934364933437592e-011 -3.5090051456126269e-013</Inertia>
+</MassProperties>
+<GeometryFile name="piston_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimMechanicsImportXML>

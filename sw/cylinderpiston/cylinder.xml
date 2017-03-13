@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimMechanicsImportXML version="1.0" xmlns="urn:mathworks:simmechanics:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="01/28/16||17:19:38" using="SimMechanics Link Version 4.4" from="SolidWorks 21.0.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="cylinder" uid="cylinder" version="116">
+<AssemblyFile name="cylinder.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="piston-1" uid="piston-1" entityUid="piston*:*Default">
+<Transform>
+<Rotation>-0.99897362756486296 0.045295600557873052 0 -0.045295600557873052 -0.99897362756486296 0 0 0 0.99999999999999978</Rotation>
+<Translation>0.04846429925399847 0.1227445424777471 0.13889978720419655</Translation>
+</Transform>
+</Instance>
+<Instance name="Part1-1" uid="Part1-1" grounded="true" entityUid="Part1*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.048464299253998727 0.12274454247774721 0.088899787204196654</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Part1-1</Uid>
+</InstancePath>
+<Position>0 0 0.050000000000000003</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>piston-1</Uid>
+</InstancePath>
+<Position>0 0 0.14999999999999994</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="LimitDistance1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Part1-1</Uid>
+</InstancePath>
+<Position>0 0 0.050000000000000003</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>piston-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Distance>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Part1" uid="Part1*:*Default" version="125">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Part1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.24543692606170261</Mass>
+<CenterOfMass>0 0 0.069999999999999993</CenterOfMass>
+<Inertia>0.00051861333803767068 0.00051861333803767068 8.8203895303424384e-005 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Part1_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="piston" uid="piston*:*Default" version="105">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="piston.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.073631077818510776</Mass>
+<CenterOfMass>0 0 0.074999999999999997</CenterOfMass>
+<Inertia>0.0001409344848869933 0.0001409344848869933 5.7524279545711557e-006 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="piston_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimMechanicsImportXML>

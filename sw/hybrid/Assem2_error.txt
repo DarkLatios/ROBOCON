@@ -1,0 +1,4 @@
+Constrained Instances: 'al strip1-1', 'piston-2'
+Constraint Name: Distance3
+Error Details: Constrained components are not resolved. Resolve components and try again. The constraint has been ignored.
+---------------------------------------------------------------------------------

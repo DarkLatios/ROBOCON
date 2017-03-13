@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimMechanicsImportXML version="1.0" xmlns="urn:mathworks:simmechanics:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="01/29/16||11:13:26" using="SimMechanics Link Version 4.4" from="SolidWorks 21.0.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Assem2" uid="Assem2" version="285">
+<AssemblyFile name="Assem2.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="cylinder-2" uid="cylinder-2" entityUid="cylinder*:*Default">
+<Transform>
+<Rotation>1 0 0 0 0 1 0 -1 0</Rotation>
+<Translation>0.30821595553715808 0.19723969244014813 0.30413190623513664</Translation>
+</Transform>
+</Instance>
+<Instance name="piston-1" uid="piston-1" entityUid="piston*:*Default">
+<Transform>
+<Rotation>0.21437800787975553 -0.97675077155716017 0 0 0 1 -0.97675077155716017 -0.21437800787975553 0</Rotation>
+<Translation>0.30821595553715808 0.21223969244014823 0.30413190623513664</Translation>
+</Transform>
+</Instance>
+<Instance name="al strip1-2" uid="al strip1-2" entityUid="al strip1*:*Default">
+<Transform>
+<Rotation>0.31448771133623782 0 0.94926154426401144 0 1 0 -0.94926154426401144 0 0.31448771133623782</Rotation>
+<Translation>0.10528172200068268 0.45723969244014789 0.45123845354478193</Translation>
+</Transform>
+</Instance>
+<Instance name="cylinder-1" uid="cylinder-1" entityUid="cylinder*:*Default">
+<Transform>
+<Rotation>0.9373293171389766 0.34844476066053903 0 0 0 1 0.34844476066053903 -0.9373293171389766 0</Rotation>
+<Translation>-0.031784044462841894 0.19723969244014813 0.3041319062351367</Translation>
+</Transform>
+</Instance>
+<Instance name="wood-1" uid="wood-1" entityUid="wood*:*Default">
+<Transform>
+<Rotation>-0.44885288178300492 1.7400025223334595e-016 0.89360566835438793 0 1 -1.6328364727176289e-016 -0.89360566835438793 0 -0.44885288178300492</Rotation>
+<Translation>0.14534745642491942 0.46223969244014795 0.33030253280554694</Translation>
+</Transform>
+</Instance>
+<Instance name="al strip1-1" uid="al strip1-1" entityUid="al strip1*:*Default">
+<Transform>
+<Rotation>-0.69849514329056195 2.1818562456644804e-016 -0.71561479498365443 3.0221112563080274e-016 1 0 0.71561479498365443 -2.0934380840846461e-016 -0.69849514329056195</Rotation>
+<Translation>0.23225600510598771 0.45223969244014783 0.18631225983823002</Translation>
+</Transform>
+</Instance>
+<Instance name="al strip2-2" uid="al strip2-2" entityUid="al strip2*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.052284044462841808 0.44723969244014827 0.31913190623513665</Translation>
+</Transform>
+</Instance>
+<Instance name="wood-2" uid="wood-2" entityUid="wood*:*Default">
+<Transform>
+<Rotation>-0.99607639982839591 -1.8324229697386523e-016 -0.088497489822604261 1.7438419477227713e-016 -1 1.0782583864524928e-016 -0.088497489822604261 0 0.99607639982839591</Rotation>
+<Translation>0.15833299856189417 0.49323969244014843 0.29374592263149146</Translation>
+</Transform>
+</Instance>
+<Instance name="al strip2-1" uid="al strip2-1" grounded="true" entityUid="al strip2*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.052284044462841905 0.18223969244014812 0.31913190623513665</Translation>
+</Transform>
+</Instance>
+<Instance name="piston cylinder-1" uid="piston cylinder-1" entityUid="piston cylinder" rigid="true">
+<Transform>
+<Rotation>0.13645897125698458 0.9906457233357876 0 0 0 0.99999999999999989 0.9906457233357876 -0.13645897125698458 0</Rotation>
+<Translation>-0.11724832119579007 0.15119050857374883 0.27357377131432792</Translation>
+</Transform>
+<Instance name="piston-1" uid="piston-1" entityUid="piston*:*Default">
+<Transform>
+<Rotation>0.95278744626890233 0.30363807770499346 0 -0.30363807770499346 0.95278744626890233 0 0 0 1.0000000000000002</Rotation>
+<Translation>0.041934652954614016 0.080494888588659608 0.066049183866399214</Translation>
+</Transform>
+</Instance>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>al strip2-1</Uid>
+</InstancePath>
+<Position>0 0.0050000000000000044 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Assem2</Uid>
+</InstancePath>
+<Position>-0.03178404446284188 0.18723969244014813 0.30413190623513664</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>al strip2-1</Uid>
+</InstancePath>
+<Position>0.020500000000000018 0.0050000000000000044 -0.015000000000000013</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Assem2</Uid>
+</InstancePath>
+<Position>-0.03178404446284188 0.18723969244014813 0.30413190623513664</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>al strip2-1</Uid>
+</InstancePath>
+<Position>0 0.0050000000000000044 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>cylinder-1</Uid>
+</InstancePath>
+<Position>0 0 -0.010000000000000009</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>al strip2-1</Uid>
+</InstancePath>
+<Position>0.020500000000000018 0.0050000000000000044 -0.015000000000000013</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>cylinder-1</Uid>
+</InstancePath>
+<Position>0 0 -0.010000000000000009</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>piston cylinder-1</Uid>
+<Uid>piston-1</Uid>
+</InstancePath>
+<Position>0 0 0.23500000000000001</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>cylinder-1</Uid>
+</InstancePath>
+<Position>0 0 0.01999999999999999</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="LimitDistance1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>cylinder-1</Uid>
+</InstancePath>
+<Position>0 0 0.01999999999999999</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>piston cylinder-1</Uid>
+<Uid>piston-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Distance>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>al strip2-1</Uid>
+</InstancePath>
+<Position>0 0.0050000000000000044 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>cylinder-2</Uid>
+</InstancePath>
+<Position>0 0 -0.010000000000000009</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric5">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>al strip2-1</Uid>
+</InstancePath>
+<Position>0.36049999999999999 0.0050000000000000044 -0.015000000000000013</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>cylinder-2</Uid>
+</InstancePath>
+<Position>0 0 -0.010000000000000009</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>cylinder-2</Uid>
+</InstancePath>
+<Position>0 0 0.01999999999999999</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>piston-1</Uid>
+</InstancePath>
+<Position>0 0 0.23500000000000004</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric7">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>piston-1</Uid>
+</InstancePath>
+<Position>0 0 0.23500000000000004</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>al strip2-2</Uid>
+</InstancePath>
+<Position>0.36049999999999999 0 -0.015000000000000013</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric8">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>piston cylinder-1</Uid>
+<Uid>piston-1</Uid>
+</InstancePath>
+<Position>0 0 0.23500000000000001</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>al strip2-2</Uid>
+</InstancePath>
+<Position>0.020500000000000018 0.0050000000000000044 -0.015000000000000013</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Parallel name="Parallel1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>piston cylinder-1</Uid>
+<Uid>piston-1</Uid>
+</InstancePath>
+<Position>0 0 0.23500000000000001</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>piston-1</Uid>
+</InstancePath>
+<Position>0 0 0.23500000000000004</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Parallel>
+<Coincident name="Coincident10">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>piston cylinder-1</Uid>
+<Uid>piston-1</Uid>
+</InstancePath>
+<Position>0 0 0.23500000000000001</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>al strip2-2</Uid>
+</InstancePath>
+<Position>0 0.0050000000000000044 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident15">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>al strip2-2</Uid>
+</InstancePath>
+<Position>0 0.0050000000000000044 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>al strip1-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident16">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>al strip2-2</Uid>
+</InstancePath>
+<Position>0.1905 0.0050000000000000044 -0.015000000000000013</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>al strip1-1</Uid>
+</InstancePath>
+<Position>0.15000000000000008 0.00500000000000006 -0.015000000000000013</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric10">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>al strip1-1</Uid>
+</InstancePath>
+<Position>0.15000000000000008 0.00500000000000006 -0.015000000000000013</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>al strip1-2</Uid>
+</InstancePath>
+<Position>0.15000000000000013 0.0050000000000000044 -0.014999999999999986</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident17">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>al strip1-1</Uid>
+</InstancePath>
+<Position>0 0.0050000000000000044 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>al strip1-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident21">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>al strip1-2</Uid>
+</InstancePath>
+<Position>0 0.0050000000000000044 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wood-1</Uid>
+</InstancePath>
+<Position>0 0 -0.10776307345282984</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric18">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>al strip1-2</Uid>
+</InstancePath>
+<Position>0.025000000000000022 0.0050000000000000044 -0.015000000000000013</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>wood-1</Uid>
+</InstancePath>
+<Position>-0.061801132675704251 0.036000000000000032 -0.083014336111300713</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric19">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>al strip1-2</Uid>
+</InstancePath>
+<Position>0.0500000000000001 0.0050000000000000044 -0.015000000000000013</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>wood-1</Uid>
+</InstancePath>
+<Position>-0.044123463146040598 0.036000000000000032 -0.06533666658163699</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident22">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>al strip1-1</Uid>
+</InstancePath>
+<Position>0 0.0050000000000000044 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wood-2</Uid>
+</InstancePath>
+<Position>0 0.036000000000000032 -0.10776307345282984</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric20">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>al strip1-1</Uid>
+</InstancePath>
+<Position>0.050000000000000017 0.0050000000000000044 -0.015000000000000013</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>wood-2</Uid>
+</InstancePath>
+<Position>-0.04412346314604057 0.036000000000000032 -0.065336666581637004</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident28">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>piston-1</Uid>
+</InstancePath>
+<Position>0 0 0.23500000000000004</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>al strip2-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+<Assembly name="piston cylinder" uid="piston cylinder" version="114">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<AssemblyFile name="piston cylinder.SLDASM" type="SolidWorks Assembly"/>
+</Assembly>
+</Assemblies>
+<Parts>
+<Part name="al strip1" uid="al strip1*:*Default" version="105">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="al strip1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.056584513322353841</Mass>
+<CenterOfMass>0.19096720384479324 0.0025000000000000001 -0.014999999999999998</CenterOfMass>
+<Inertia>4.4028620577301989e-006 0.00068510928361578932 0.00068094219036356901 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="al strip1_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="al strip2" uid="al strip2*:*Default" version="113">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="al strip2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0564431416529423</Mass>
+<CenterOfMass>0.1905 0.0025000000000000001 -0.014999999999999999</CenterOfMass>
+<Inertia>4.4022494471627475e-006 0.00068432380383492693 0.00068015673414465144 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="al strip2_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="cylinder" uid="cylinder*:*Default" version="172">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="cylinder.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.052207567021137248</Mass>
+<CenterOfMass>1.623006443658734e-009 1.996457491590187e-009 0.059380696023295668</CenterOfMass>
+<Inertia>0.0001482313110059858 0.00014833547973246456 8.1880450665854751e-006 4.2740183965961339e-012 3.4179852969635809e-012 4.9020578004292334e-012</Inertia>
+</MassProperties>
+<GeometryFile name="cylinder_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="piston" uid="piston*:*Default" version="124">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="piston.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.073726185926070192</Mass>
+<CenterOfMass>2.9282574192369942e-009 -2.2067331342009434e-009 0.11468582427552185</CenterOfMass>
+<Inertia>0.00034134920337548818 0.00034137688642563093 3.769194012533938e-006 1.52003260850245e-011 -1.9978326554861186e-011 -2.9694646020069456e-013</Inertia>
+</MassProperties>
+<GeometryFile name="piston_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="wood" uid="wood*:*Default" version="142">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="wood.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.043212659595409701</Mass>
+<CenterOfMass>-0.043551676863555197 0.017999999999999999 -0.10801622760681362</CenterOfMass>
+<Inertia>0.00011866409719556806 0.00014548732011160706 3.6157157388647518e-005 0 -7.7501858812155005e-008 0</Inertia>
+</MassProperties>
+<GeometryFile name="wood_Default_sldprt.STL" type="STL"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimMechanicsImportXML>

@@ -1,0 +1,1 @@
+@reboot sh /home/pi/launcher.sh >/logs/cronlog 2>&1
